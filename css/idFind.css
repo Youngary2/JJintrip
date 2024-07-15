@@ -1,0 +1,134 @@
+.join{}
+.join .tiny_inner{
+    /* border: 1px solid #efefef; */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.logo {
+    text-align: center;
+}
+.logo img{
+    width: 120px;
+}
+.joinTit{
+    text-align: center;
+}
+
+.emLogin{}
+.emLogin > div{
+    position: relative;
+}
+.emLogin > div span{
+    position: absolute; left: 0; bottom: 100%;
+    font-size: 15px;
+    color: #9a9a9a;
+    margin-bottom: 6px;
+}
+
+.iconWrap{}
+.iconWrap .el{
+    position: relative;
+    display: block;
+    text-align: center;
+}
+.iconWrap .el span{
+    padding: 0 8px;
+    background: #fff;
+    position: relative;
+    font-size: 15px;
+    z-index: 1000;
+}
+.iconWrap .el:before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    margin-top: -1px;
+    border: dotted #dadada;
+    border-width: 2px 0 0;
+    z-index: 1;
+    opacity: .84;
+}
+.iconWrap .list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.iconWrap .list a{
+    overflow: hidden;
+    position: relative;
+    width: 48px;
+    height: 48px;
+    margin: 0 10px;
+}
+.iconWrap .list a.naver{background: url(../img/round_ico_naver.png) no-repeat;background-size: contain;}
+.iconWrap .list a.kakao{background: url(../img/round_ico_kakao2.png) no-repeat;background-size: contain;}
+.iconWrap .list a.facebook{background: url(../img/round_ico_facebook.svg) no-repeat;background-size: contain;}
+
+.save{
+    display: flex;
+    font-size: 15px;
+    color: #9a9a9a;
+}
+.login_rememb label{
+    margin-right: 10px;
+}
+
+.finds{
+    text-align: center;
+}
+.finds a{
+    position: relative;
+    font-size: 15px;
+    letter-spacing: -0.06em;
+    padding: 0 10px;
+}
+.finds a:after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 2px;
+    width: 1px;
+    height: 15px;
+    background: #e9e9e9;
+}
+.finds a:last-child:after{display: none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============================================================================================================반응형===============================
+=========================================================================== */
+@media(max-width:1220px){}
+@media(max-width:1024px){}
+@media(max-width:960px){}
+@media(max-width:768px){}
+@media(max-width:425px){
+    .tiny_inner {
+        width: 100%;
+    }
+}

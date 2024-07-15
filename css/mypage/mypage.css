@@ -1,0 +1,200 @@
+.mypage{
+    margin-top: 127px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.mypage .inner{
+    display: flex;
+}
+
+/* Box_left */
+.mypage .Box_left{
+    width: 250px;
+    margin-right: 20px;
+}
+.left_01,
+.left_02,
+.left_03{
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+.left_01{
+    padding: 42px 10px 30px;
+    text-align: center;
+}
+.profile_photo{
+    width: 70px; height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.profile_photo img{
+    width: 100%; height: 100%;
+    object-fit: cover;
+}
+.left_01 .nick{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.left_01 .pfSet{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.left_02{
+    padding: 13px 20px;
+    font-weight: 500;
+}
+.left_02 > div{
+    display: flex;
+}
+.left_02 .myPoint{}
+.left_02 .myCoupon{}
+.left_02 .ltit{
+    width: 60%;
+}
+.left_02 .rtxt{
+    width: 40%;
+    text-align: right;
+}
+
+.left_03{
+    padding: 13px 20px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+
+
+
+
+
+/* Box_right */
+.mypage .Box_right{
+    position: relative;
+    padding: 50px 40px 40px;
+    width: calc(100% - 270px);
+    box-sizing: border-box;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+}   
+button.pfreSet{
+    position: absolute;
+    right: 40px; top: 32px;
+    width: 70px; height: 38px;
+    font-weight: 600;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    transition: 0.3s;
+    z-index: 10;
+}
+button.pfreSet:hover{
+    border-color: #222;
+}
+.pfimgContain{
+    text-align: center;
+}
+.pfimgContain .profile_photo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.pfimgContain .nick {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.pfTxtContain > div{
+    display: flex;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.Box_right .ltit{
+    width: 122px;
+}
+.Box_right .rtxt{
+    width: calc(100% - 122px);
+    color: gray;
+}
+#phone_inz{
+    font-size: 0.9rem;
+    vertical-align: 1px;
+    cursor: pointer;
+}
+.snsPairing .rtxt > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+.snsPairing .snsName{
+    display: flex;
+    align-items: center;
+}
+.snsPairing .snsName img{
+    margin-right: 8px;
+    width: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============================================================================================================반응형===============================
+=========================================================================== */
+@media(max-width:1220px){}
+@media(max-width:1024px){}
+@media(max-width:960px){}
+@media(max-width:768px){
+    .mypage{
+        margin-top: 115px;
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+    .mypage .Box_left,
+    .mypage .Box_right{
+        width: 100%;
+    }
+    .mypage .Box_left{margin-right: 0;}
+    .mypage .inner{
+        flex-wrap: wrap;
+    }
+    button.pfreSet{
+        right: 20px; top: 20px;
+    }
+
+
+
+
+
+}
+@media(max-width:530px){
+    .mypage .Box_right{
+        padding: 50px 12px 40px;
+    }
+    .Box_right .ltit {
+        width: 110px;
+    }
+    .pfTxtContain{
+        font-size: 15px;
+    }
+}
+@media(max-width:425px){}

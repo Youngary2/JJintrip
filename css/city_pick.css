@@ -1,0 +1,59 @@
+.topTit {}
+
+.topTit h1 {
+    font-size: 28px;
+    text-align: center;
+}
+
+.now_city {
+    font-size: 22px;
+    color: #fa5800;
+    background: #f7f7f7;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    padding: 8px 0 8px 20px;
+    box-sizing: border-box;
+}
+
+
+.pick_city {}
+
+.pick_city .list {}
+
+.pick_city .text_box {
+    background-color: #fff;
+    margin-bottom: 10px;
+    overflow: hidden;
+    border-bottom: 1px solid #efefef;
+}
+
+.pick_city .depth1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    cursor: pointer;
+}
+.pick_city .depth1 img{
+    box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
+}
+
+.pick_city .depth1 .title {
+    font-size: 20px;
+}
+
+.pick_city .depth1 i {
+    position: absolute;
+    right: 40px;
+    top: 46%;
+    transform: translateY(-50%);
+    color: #ccc;
+    font-size: 24px;
+}
+
+.pick_city .depth2 li {
+    font-size: 13px;
+    padding: 20px 0px 20px 100px;
+    font-family: 'yg-jalnan';
+    font-size: 20px;
+}

@@ -1,0 +1,347 @@
+/* 서브페이지 젤위 bg */
+.main_background{
+    position: relative;
+    box-sizing: content-box;
+    position: relative;
+    height: 300px;
+    background-image: url(/img/menu03_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.main_background::after{
+    content: '';
+    background: rgba(0,0,0,0.5);
+    position: absolute; 
+    left: 0;right: 0;top: 0;bottom: 0;
+}
+
+
+
+/* whiteBox */
+.whiteBox{
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 4px;
+}
+
+
+
+
+/* 쿠폰 디자인 */
+.couponWrap .coupLists{
+    display: flex;
+    flex-wrap: wrap;
+}
+.coup_list{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin: 0;
+    margin-right: 2%;
+    margin-bottom: 15px;
+    width: 23.5%;
+    border: 1px solid #e5e5e5;
+    padding: 16px;
+    box-sizing: border-box;
+}
+.coup_list:nth-child(4n){margin-right: 0;}
+.coup_list .top{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.couponCard{
+    width: 100px;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 1px solid #e5e5e5;
+    border-right: 7px solid #000;
+    padding: 10px 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+.couponCard .coupon_cate{font-size: 12px;letter-spacing: 0.05em;margin-bottom: 4px;}
+.couponCard .sale{font-weight: 700;font-size: 18px;}
+
+
+.coup_list .descs{
+    width: calc(100% - 110px);
+    font-size: 0.85rem;
+}
+.coup_list .coupon_title{}
+.coup_list .date{}
+.coup_list .count{}
+.coup_list .desc01{
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.3;
+}
+.couponWrap .coup_down{
+    width: 100%;
+    background: none;
+    border: 1px solid #e5e5e5;
+    color: #222;
+    padding: 0;
+    height: 32px;
+    line-height: 32px;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+/* .cardWrap {
+    margin-right: 2%;
+    width: 32%; height: 240px;
+    color: #fff;
+    display: flex;
+    margin-bottom: 2%;
+}
+.cardWrap:nth-child(3n){margin-right: 0;}
+.couponWrap .card {
+    background: #F2F2F2;
+    position: relative;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.couponWrap .cardLeft {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    width: 70%;
+    background-color: #D3D3FF;
+    text-align: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.couponWrap .cardLeft p{width: 100%;}
+.couponWrap .cardRight {
+    width: 30%;
+    border-left: 0.18em dashed #222;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    text-align: center;
+    color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.couponWrap .coupon_title{
+    font-size: 2rem;
+    font-family: 'yg-jalnan';
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+.couponWrap .sale {
+    font-size: 1.8rem;
+    font-family: 'yg-jalnan';
+    margin-bottom: 10px;
+}
+.couponWrap .desc {
+    margin-bottom: 10px;
+}
+.couponWrap .desc:last-child{margin-bottom: 0;}
+.couponWrap .cardRight:before, 
+.couponWrap .cardRight:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0.9em;
+    height: 0.9em;
+    background: #fff;
+    border-radius: 50%;
+    left: -0.5em;
+}
+.couponWrap .cardRight:before {
+    top: -0.4em;
+}
+.couponWrap .cardRight:after {
+    bottom: -0.4em;
+}
+.couponWrap .cardRight img{
+    width: 66px;
+    height: 70%;
+    margin-left: 6px;
+}
+.couponWrap .cardRight p{
+    display: block;
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+    font-size: 0.9rem;
+} */
+
+
+
+
+/* 카드 리스트(화면전체 차지하는) - 공통 */
+.cardListWrap{}
+.cardListWrap .cardList{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cardListWrap .card{
+    margin-right: 2%;
+    width: 23.5%;
+}
+.cardListWrap .card:nth-child(4n) {
+    margin-right: 0;
+}
+.cardListWrap .card a{display: block;}
+.cardListWrap .card .top{
+    border-radius: 4px;
+    overflow: hidden;
+}
+.cardListWrap .card .top img{
+    display: block;
+    width: 100%;
+}
+.cardListWrap .card .middle{
+    position: relative;
+}
+.cardListWrap .card .middle .ggim{
+    position: absolute; right: 10px;top: 10px;
+    width: 16px;height: 16px;
+    cursor:pointer;
+}
+.cardListWrap .card .middle .ggim i{
+    position: absolute; left: 0;top: 0;
+}
+.cardListWrap .card .middle .ggim i.fa-regular{}
+.cardListWrap .card .middle .ggim i.fa-solid{display: none;}
+
+.cardListWrap .card .middle span{
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.cardListWrap .card .middle span:last-child{
+    font-size: 12px;
+    margin-top: 4px;
+    font-weight: normal;
+
+    width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.cardListWrap .card .bottom{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.cardListWrap .card .bottom span:nth-child(1){
+    color: rgb(62, 0, 255);
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 4px;
+}
+.cardListWrap .card .bottom span:nth-child(2){
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+}
+.cardListWrap .card .bottom span em{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+}
+.cardListWrap .slick-list{
+    margin-left: -20px;
+}
+.cardListWrap .slick-slide {
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============================================================
+================================================반응형===============================
+=========================================================================== */
+
+
+
+@media(max-width:1400px){
+   /* 쿠폰 */
+   .coup_list{
+    width: 32%;
+   }
+   .coup_list:nth-child(4n) {
+        margin-right: 2%;
+    }
+    .coup_list:nth-child(3n) {
+        margin-right: 0;
+    }
+
+
+}
+
+@media(max-width:1000px){
+    /* 쿠폰 */
+    .coup_list{
+        width: 49%;
+    }
+    .coup_list:nth-child(3n) {
+        margin-right: 2%;
+    }
+    .coup_list:nth-child(2n) {
+        margin-right: 0;
+    }
+ 
+ 
+ }
+
+ @media(max-width:768px){
+    /* 카드 리스트(화면전체 차지하는) - 공통 */
+    .cardListWrap .card{
+        width: 49%;
+    }
+    .cardListWrap .card:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    /* 쿠폰 */
+    .coup_list{
+        width: 100%;
+        margin-right: 0;
+    }
+    .coup_list:nth-child(3n) {
+        margin-right: 0;
+    }
+ }
+
+ @media(max-width:480px){
+
+
+ }
+ 

@@ -1,0 +1,716 @@
+/* 여기어때 잘난체 */
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+table{border-collapse: collapse;}
+
+li {
+    list-style: none;
+}
+ol li{
+    list-style: decimal inside;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+img{image-rendering: -webkit-optimize-contrast;}
+
+
+
+/* inner */
+.inner {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.tiny_inner{
+    width: 400px;
+    margin: 80px auto;
+}
+
+.main_cont{
+    padding: 20px 0;
+}
+.cont{
+    background: #fff;
+    margin-bottom: 10px;
+}
+
+/* 배경,텍스트 */
+html,
+body {
+    color: #222;
+    font-family:'Pretendard';
+}
+.yg-jalnan{
+    font-family:'yg-jalnan';
+}
+.bg_white{
+    background: #fff !important;
+}
+
+/* 제목 텍스트 */
+.bigTit{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family:'yg-jalnan';
+}
+.bigTit2{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family:'yg-jalnan';
+}
+.tit{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family:'yg-jalnan';
+}
+.normaltit{
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: -0.01em;
+}
+
+
+/* 더보기 텍스트 */
+.moreSee{
+    position: absolute;
+    right: 20px; top: 20px;
+    font-size: 14px;
+    color: #3655e1;
+    font-weight: 600;
+    cursor: pointer;
+}
+.moreSee i{font-size: 13px;color: #3655e1;}
+
+
+
+/* 본문 텍스트 */
+.desc_tit{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #00AEEF;
+    padding-bottom: 14px;
+}
+.descTxt{
+    line-height: 1.4rem;
+    word-break: keep-all;
+}
+
+/* 서브 텍스트 */
+.grayTxt{
+    color: #737070;
+    font-size: 0.85rem;
+}
+
+
+
+/* 형광펜 */
+.highlighter{
+    color: #fff;
+}
+.highlighter.hl_mint{
+    background: #95d5da;
+    border-radius: 20px;
+}
+
+/* 밑줄 */
+.underline{
+    position: relative;
+}
+.underline:after{
+    content: '';
+    position: absolute;
+    left: 50%; bottom: -4px;
+    transform: translateX(-50%);
+    width: 80%; height: 2px;
+    background: #00AEEF;
+}
+
+/* 별표시 */
+.star{}
+.star:before{
+    content: '*';
+    display: inline-block;
+    font-size: 1.2rem;
+    vertical-align: -5px;
+    color: #ff4800;
+    padding-right: 4px;
+}
+
+/* *필수 표시 */
+.pilsoo{}
+.pilsoo:after{
+    content:'*필수';
+    font-size: 0.9rem;
+    color: #dd2925;
+    vertical-align: 2px;
+    margin-left: 8px;
+}
+
+/* 주의(느낌표 아이콘 표시) */
+.alertTxt {
+    display: block;
+    padding-left: 30px;
+    color: #9a9a9a;
+    font-size: 15px;
+    margin-top: 10px;
+    background: url(/responsive/JJinTrip/img/join_sns_icon.gif) no-repeat left center;
+}
+
+/* 색상 */
+.red{color: #ff3d44 !important;}
+.blue{color: #3655e1 !important;}
+.orange{color: #ff4800 !important;}
+.gray{color: #9a9a9a !important;}
+
+
+/* 넓이 */
+.w_33_333{width: 33.333%;}
+
+
+/* 스크롤바 디자인 */
+.scrollBar::-webkit-scrollbar{
+    width: 6px;
+    border-radius: 4px;
+    box-shadow: inset 0 0 6px 0 rgb(11, 60, 148);
+}
+.scrollBar::-webkit-scrollbar-thumb{
+    background-color: #0b3c94;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+} 
+.scrollBar::-webkit-scrollbar-thumb:hover{
+    background-color: #0b3c94;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+} 
+
+
+/* 별점 */
+.score{}
+.score .starWrap{
+    font-size: 13px;
+    font-weight: 600;
+}
+.score .istar{
+    letter-spacing: -1.6px;
+    margin-right: 3px;
+}
+.score i{
+    font-size: 12px;
+}
+.score .istar i{
+    color: #fdbd00;
+}
+
+
+
+
+
+form,
+fieldset {
+    border: 0;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+.flex_center{
+    justify-content: center;
+}
+.clearfix:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+
+
+input {
+    display: inline-block;
+    box-sizing: border-box;
+    height: 45px;
+    padding: 0 10px;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    background: #fff;
+    font-size: 15px;
+    outline: none;
+
+    /* 아이폰 reset */
+    -webkit-border-radius:4px;
+    -webkit-appearance: none; /* 인풋내 그림자 제거 */
+    color: #222; /* 아이폰은 가끔 파란색으로 나옴*/
+    box-shadow: none;
+}
+
+select{
+    /* 아이폰 reset */
+    -webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: none;
+	color: #222; /* 아이폰은 가끔 파란색으로 나옴*/
+}
+
+input, textarea, select:focus {
+    /* 아이폰 reset */
+    outline: none;
+    box-shadow: none !important;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+
+i{
+    /* 아이폰 reset */
+    color: #222; /* 아이폰은 가끔 파란색으로 나옴*/
+}
+
+.golbang {
+    display: inline-block;
+    padding: 0 5px;
+    color: #222;
+}
+
+.select_box {
+    display: inline-block;
+    box-sizing: border-box;
+    height: 45px;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    font-size: 15px;
+    outline: none;
+    background: url(/responsive/JJinTrip/img/select_opt_btn.png) no-repeat right 8px center;
+}
+
+.select_box select {
+    display: inline-block;
+    width: 100%;
+    height: 42px;
+    padding: 0 10px 0 14px;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 15px;
+    appearance: none;
+    /* select 화살표 없애기 */
+}
+
+.agree_checkbox,
+.radio {
+    position: absolute;
+    left: -1000px;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+}
+
+.agree_checkbox+label,
+.radio+label {
+    display: inline-block;
+    background: url(/responsive/JJinTrip/img/join_input_off.gif) no-repeat 0 center;
+    height: 40px;
+    line-height: 40px;
+    background-size: 20px;
+    font-size: 16px;
+    padding-left: 28px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.agree_checkbox+label {
+    margin-right: 0;
+}
+
+.agree_checkbox:checked+label,
+.radio:checked+label {
+    background: url(/responsive/JJinTrip/img/join_input_on.gif) no-repeat 0 center;
+}
+
+.radio+label {
+    background-image: url(/responsive/JJinTrip/img/radio_none.gif);
+}
+
+.radio:checked+label {
+    background-image: url(/responsive/JJinTrip/img/radio_on.gif);
+}
+
+/* 버튼 */
+button {
+    border: 0;
+    outline: none;
+    background: none;
+    border-radius: 4px;
+    height: 52px;
+
+    /* 아이폰 reset */
+    -webkit-border-radius:4px;
+    -webkit-appearance: none; /* 인풋내 그림자 제거 */
+    color: #222; /* 아이폰은 가끔 파란색으로 나옴*/
+}
+.buttonArea {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.button {
+    width: 300px;
+    border-radius: 4px;
+    background: #ff4800;
+    color: #fff;
+    padding: 10px 0;
+    cursor: pointer;
+    font-size: 1.005rem;
+}
+.inputButton{/* input옆에 있는 버튼 */
+    height: 45px;
+    width: 80px;
+    background: #ff4800;
+    color: #fff;
+    font-size: 1.005rem;
+    cursor: pointer;
+}
+
+/* 토글버튼 */
+.toggle{}
+.btn_toggle{
+    position: relative;
+    border: none;
+    width: 48px; height: 24px;
+    border-radius: 1.5rem;
+    background: #bdc1c8;
+    cursor: pointer;
+}
+.btn_toggle.active {
+    background-color: #ff4800;
+}
+.btn_toggle .handle{
+    position: absolute;
+    top: 3px; left: 3px;
+    width: 18px; height: 18px;
+    border-radius: 1.875rem;
+    background: #fff;
+    transition: left 0.25s;
+}
+.btn_toggle.active .handle{
+    left: unset;
+    right: 3px;
+}
+
+/* 팝업 공통 */
+.popup {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #222;
+    font-size: 0.95rem;
+    z-index: 2000;
+}
+
+.popup>div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 84%;
+    background: #fff;
+}
+
+.popup>div .popup_inner {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.popup h3 {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.popup .btn {
+    height: 52px;
+    line-height: 52px;
+    font-size: 1.1rem;
+    padding: 0 10px;
+    cursor: pointer;
+    background: #1f1f1f;
+    color: #fff;
+    text-align: center;
+}
+
+.closeIcon{
+    position: absolute;
+    top: 1px; right: 1px;
+    width: 70px; height: 70px;
+    z-index: 100;
+    cursor: pointer;
+}
+.closeIcon:after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    width: 40px; height: 40px;
+    background: url(/responsive/JJinTrip/img/close_round_white.png) no-repeat;
+    background-size: cover;
+}
+
+
+.ir{
+    text-indent: -9999em;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.hidden_btn{/* 보이지않는 버튼 */
+    font-size: 0;
+    width: 0;
+    height: 0;
+    text-indent: -9999;
+    border: 0;
+    background: none;
+    z-index: 10;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/* 아코디언 박스 */
+.accordion-item {
+    margin-bottom: 2px;
+    border-bottom: solid 1px #e5e5e5;
+}
+.accordion-header {
+    min-height: 40px;
+    padding: 20px 35px 20px 15px;
+    box-sizing: border-box;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #212121;
+    /* border-bottom: solid 1px #e5e5e5; */
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    -webkit-tap-highlight-color: transparent;
+    transition: background .2s linear;
+}
+.accordion-header .accordion-item-arrow {
+    position: absolute;
+    right: 15px;
+    height: 20px;
+    margin-top: -10px;
+    top: 50%;
+}
+.accordion-header .accordion-item-arrow:before {
+    content: "\f107";
+    font-family: 'FontAwesome';
+    font-size: 18px;
+    float: right;
+    transition: all .2s linear;
+}
+.accordion-item.active .accordion-header .accordion-item-arrow:before {
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.accordion-content {
+    /* padding: 15px; */
+    padding: 15px 15px 15px 44px;
+    display: none;
+    color: #9a9a9a;
+    /* border-bottom: solid 1px #e5e5e5; */
+}
+.accordion-content img{
+	max-width:100%;
+}
+
+
+
+
+
+/* 달력팝업 */
+.calendar .cl_title{
+    font-size: 1.6rem;
+    color: #826F66;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+.offerSelect{position: relative;}
+.calendar_container {
+    display: none;
+    position:absolute;
+    left: 0; top: 100%;
+    /* transform: translate(-50%,-50%); */
+    /* display: flex; */
+    justify-content:space-evenly;
+    background-color: white;
+    box-shadow: 1px 1px 25px rgb(0 0 0 / 17%);
+    /* padding: 0 35px; */
+    border-radius: 5px;
+    z-index: 3000;
+}
+
+.hide {
+    display:none;
+}
+
+.calendar_container > button {
+    position: absolute;
+    margin: 0;
+    /* margin-top: 7%; */
+    font-weight: bold;
+    padding: 10px 14px;
+    cursor: pointer;
+}
+.calendar_container > button.left_button{
+    left: 4%; top: 6%;
+}
+.calendar_container > button.right_button{
+    right: 4%; top: 6%;
+}
+.calendar_container > button:hover{
+    color: #826f66;
+}
+
+.left_button {
+    margin-left:17%;
+    border: transparent;
+}
+
+.right_button {
+    margin-right:17%;
+    border: transparent;
+}
+
+.calendar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    margin: 5% 2.5%;
+}
+
+
+.calendar_days > button  {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+.calendar_container table {
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+.day {
+    text-align: center;
+    font-size:12px;
+    font-weight: bold;
+    color:rgb(189, 189, 189);
+}
+
+
+.day_hover {
+    border: 1px solid #826f66 !important;
+}
+
+.day_selected {
+    background-color: #826f66 !important;
+    color: #ffff;
+}
+
+.calendar_container .gray {
+    background-color: rgb(241, 241, 241) !important;
+}
+
+
+.slick-slide{}
+.slick-slide img{}
+.slick-dots li button{
+    display: none;
+}
+
+
+
+/* 페이징 */
+.layout_pagination{
+    width: 100%;
+    height: 34px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.paging ul {
+    overflow: hidden;
+    text-align: center;
+    padding-top: 20px;
+}
+.paging li {
+    display: inline-block;
+    width: 24px;
+    height: 20px;
+    margin: 0 2px;
+    overflow: hidden;
+    color: #767676;
+    font-size: 14px;
+    padding-top: 4px;
+    cursor: pointer;
+}
+
+
+

@@ -1,0 +1,44 @@
+.join{}
+.join .tiny_inner{
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.logo {
+    text-align: center;
+}
+.logo img{
+    width: 120px;
+}
+.joinTit{
+    text-align: center;
+}
+
+.buttonArea{
+    display: flex;
+}
+.buttonArea .button:first-child{
+    background: #9a9a9a;
+}
+
+
+
+
+
+
+
+
+
+
+/* ===============================================================================================================반응형===============================
+=========================================================================== */
+@media(max-width:1220px){}
+@media(max-width:1024px){}
+@media(max-width:960px){
+}
+@media(max-width:768px){}
+@media(max-width:425px){
+    .tiny_inner {
+        width: 100%;
+    }
+}

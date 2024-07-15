@@ -1,0 +1,307 @@
+/* ================= menu03 ================= */
+.menu03{}
+.menu03 .whiteBox{background: none;}
+.menu03 .main_background{
+    background-image: url(/responsive/JJinTrip/img/menu03_bg.jpg);
+}
+.menu03 .tabMenu{
+    display: flex;
+}
+.menu03 .tabMenu li{
+    padding: 14px 0;
+    box-sizing: border-box;
+    width: 33.333%;
+    text-align: center;
+    font-family:'yg-jalnan';
+    color: #9a9a9a;
+    border-radius: 4px;
+    background: rgba(255,255,255,0.8);
+    cursor: pointer;
+}
+.menu03 .tabMenu li.active{
+    background: #fff;
+    color: #ff4800;
+    border-color: #e5e5e5;
+}
+
+.menu03 .tabCont{
+    padding: 20px;
+}
+.menu03 .tabCont .pickUp{
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu03 .tabCont li{
+    display: none; /* 탭내용들 일단숨김 */
+}
+.menu03 .tabCont li > div{
+    position: relative;
+    margin-bottom: 12px;
+}
+.menu03 .tabCont li > div span{
+    position: absolute; left: 0;top: 0;
+    margin: 10px 0 0 10px;
+    font-size: 0.9rem;
+    color: #9a9a9a;
+}
+.menu03 .tabCont li > div input{
+    width: 100%; height: unset;
+    padding: 36px 10px 10px 10px;
+    box-sizing: border-box;
+    background: #f7f7f7;
+    cursor: pointer;
+}
+.menu03 .tabCont li > div input:hover{
+    background: #efefef;
+}
+.menu03 .tabCont li > div input.agree_checkbox{
+    width: unset;
+}
+.menu03 .pickSend > div.pickUpDate,
+.menu03 .pickSend > div.pickUpTime,
+.menu03 .pickSend > div.startPoint,
+.menu03 .pickSend > div.endPoint{
+    width: calc(50% - 5px);
+}
+.menu03 .pickSend > div.pickUpDate,
+.menu03 .pickSend > div.startPoint{
+    margin-right: 10px;
+}
+.menu03 .pickSend > div.passenger{width: 100%;}
+
+.menu03 .rentCar{}
+.menu03 .rentCar .otherReturnCheck{
+    width: 100%;
+}
+.menu03 .rentCar > div.rentDay{
+    width: calc(66.667% - 5px);
+    display: flex;
+
+    background: #f7f7f7;
+    border-radius: 4px;
+    border: 1px solid #e5e5e5;
+    box-sizing: border-box;
+}
+.menu03 .rentCar > div.rentDay:hover{
+    background: #efefef;
+    cursor: pointer;
+}
+.menu03 .rentCar > div.startPoint{
+    width: calc(33.333% - 5px);
+}
+.menu03 .rentCar > div .rentStartDay,
+.menu03 .rentCar > div .rentEndDay{
+    width: calc(50% - 5px);
+}
+.menu03 .rentCar > div.startPoint,
+.menu03 .rentCar > div .rentStartDay{
+    margin-right: 10px;
+}
+.menu03 .rentCar > div.rentDay > div{
+    position: relative;
+}
+.menu03 .rentDay{position: relative;}
+.menu03 .rentCar > div.rentDay .r_date,
+.menu03 .rentCar > div.rentDay .r_time{
+    position: unset;
+    display: block;
+}
+.menu03 .rentCar > div.rentDay .r_date{
+    color: #222;
+    font-weight: 500;
+}
+.menu03 .rentCar > div.rentDay .r_time{
+    font-size: 0.9rem;
+}
+.menu03 .tabCont li > div .rentEndDay span{
+    margin: 10px 0 0 30px;
+}
+.menu03 .rentDay .rentTotalDay{
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    background: #fff;
+    padding: 4px 16px;
+    box-shadow: 0 0 8px rgb(0 0 0 / 10%);
+    margin: 0;
+}
+
+.menu03 .cardBox{
+    display: flex;
+}
+.menu03 .cardBox li{
+    margin-right: 2%;
+    width: 23.5%;
+    background: #f7f7f7;
+    border-radius: 4px;
+    padding: 14px;
+    box-sizing: border-box;
+}
+.menu03 .cardBox li:last-child{margin-right: 0;}
+.menu03 .cardBox img{}
+.menu03 .cardBox .title{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.menu03 .cardBox .desc{
+    color: #9a9a9a;
+    font-size: 0.9rem;
+}
+
+
+
+
+
+/* 공항명 팝업 */
+.menu03 .pickSend > div.airportBox{position: relative;}
+.airport_pop{
+    display: none;
+    position:absolute;
+    left: 0; top: calc(100% + 8px);
+    width: 100%;
+    z-index: 3000;
+    background: #fff !important;
+}
+.airport_pop > div{
+    padding: 30px;
+    box-sizing: border-box;
+}
+.airport_pop .airport{}
+.airport_pop .airport p{
+    font-size: 0.9rem;
+    color: #9a9a9a;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.airport_pop .airport ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.airport_pop .airport li{
+    width: 32%;
+    margin-right: 2%;
+    display: unset;
+    word-break: break-word;
+    padding: 10px 0;
+    font-weight: 600;
+    cursor: pointer;
+}
+.airport_pop .airport li:nth-child(3n){margin-right: 0;}
+.airport_pop .airport li:hover{
+    color: #ff4800;
+}
+
+
+
+/* 호텔명 팝업 */
+.menu03 .pickSend > div.hotelBox{position: relative;}
+.hotel_pop{
+    display: none;
+    position:absolute;
+    left: 0; top: calc(100% + 8px);
+    width: 100%;
+    z-index: 3000;
+    background: #fff !important;
+}
+.hotel_pop > div{
+    padding: 30px;
+    box-sizing: border-box;
+}
+.hotel_pop .hotel{}
+.hotel_pop .hotel p{
+    font-size: 0.9rem;
+    color: #9a9a9a;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.hotel_pop .hotel ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.hotel_pop .hotel li{
+    width: 32%;
+    margin-right: 2%;
+    display: unset;
+    word-break: break-word;
+    padding: 10px 0;
+    font-weight: 600;
+    cursor: pointer;
+}
+.hotel_pop .hotel li:nth-child(3n){margin-right: 0;}
+.hotel_pop .hotel li:hover{
+    color: #ff4800;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============================================================================================================반응형===============================
+=========================================================================== */
+
+@media(max-width:1440px){
+    /* ================= menu03 ================= */
+    .hotel_pop .hotel li,
+    .airport_pop .airport li{
+        width: 49%;
+    }
+    .hotel_pop .hotel li:nth-child(3n),
+    .airport_pop .airport li:nth-child(3n) {
+        margin-right: unset;
+    }
+    .hotel_pop .hotel li:nth-child(2n),
+    .airport_pop .airport li:nth-child(2n) {
+        margin-right: 0;
+    }
+}
+
+@media(max-width:1024px){
+
+}
+
+@media(max-width:768px){
+    /* ================= menu03 ================= */
+    .menu03 .pickSend > div.startPoint, 
+    .menu03 .pickSend > div.endPoint {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .menu03 .rentCar > div.startPoint {
+        width: 100%;
+        margin-right: 0;
+    }
+    .menu03 .rentCar > div.rentDay{
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+
+    .menu03 .cardBox{
+        flex-wrap: wrap;
+    }
+    .menu03 .cardBox li{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 2%;
+    }
+}
+
+@media(max-width:425px){
+    /* ================= menu03 ================= */
+    .bigTit {font-size: 1.9rem;}
+    
+    .menu .search{width: 100%;}
+
+    .menu03 .rentDay .rentTotalDay{
+        padding: 4px 12px;
+    }
+}

@@ -1,0 +1,118 @@
+/* ================= menu01 ================= */
+body, html {
+    background: #f7f7f7;
+}
+.menu01{}
+.menu01 .main_background{
+    background-image: url(/responsive/JJinTrip/img/menu01_bg_02.png);
+}
+
+
+.menu01 .main_cont {
+    padding: 20px 0;
+}
+.menu01 .bigTit{
+    margin-top: -140px;
+    color: #fff;
+    position: relative;
+    z-index: 20;
+}
+
+
+/* cont1 슬릭 */
+.cont1_slick{
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    margin-top: -70px;
+}
+.cont1_slick .slick-slide img{
+    width: 100%;
+}
+
+
+
+
+
+/* cont2 */
+.cont2{
+    overflow: hidden;
+}
+.cont2 .inner{
+    position: relative;
+    /* width: 100%;
+    margin: 0 0 0 5%; */
+}
+.cont2 .card a{display: block;}
+.cont2 .card .top{
+    border-radius: 4px;
+    overflow: hidden;
+}
+.cont2 .card .top img{
+    display: block;
+    width: 100%;
+}
+.cont2 .card .middle{
+    position: relative;
+}
+.cont2 .card .middle .ggim{
+    position: absolute; right: 10px;top: 10px;
+    width: 16px;height: 16px;
+    cursor:pointer;
+}
+.cont2 .card .middle .ggim i{
+    position: absolute; left: 0;top: 0;
+}
+.cont2 .card .middle .ggim i.fa-regular{}
+.cont2 .card .middle .ggim i.fa-solid{display: none;}
+
+.cont2 .card .middle span{
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.cont2 .card .middle span:last-child{
+    font-size: 12px;
+    margin-top: 4px;
+    font-weight: normal;
+
+    width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.cont2 .card .bottom{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.cont2 .card .bottom span:nth-child(1){
+    color: rgb(62, 0, 255);
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 4px;
+}
+.cont2 .card .bottom span:nth-child(2){
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+}
+.cont2 .card .bottom span em{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+}
+.cont2 .slick-list{
+    margin-left: -20px;
+}
+.cont2 .slick-slide {
+    margin-left: 20px;
+}

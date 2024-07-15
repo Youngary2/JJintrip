@@ -1,0 +1,151 @@
+.myPoint_wrap{
+    margin-top: 127px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.myPoint_wrap .inner{
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Box_left */
+.myPoint_wrap .Box_left{
+    width: 250px;
+    margin-right: 20px;
+}
+.left_01,
+.left_02,
+.left_03{
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+.left_01{
+    padding: 42px 10px 30px;
+    text-align: center;
+}
+.profile_photo{
+    width: 70px; height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.profile_photo img{
+    width: 100%; height: 100%;
+    object-fit: cover;
+}
+.left_01 .nick{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.left_01 .pfSet{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.left_02{
+    padding: 13px 20px;
+    font-weight: 500;
+}
+.left_02 > div{
+    display: flex;
+}
+.left_02 .myPoint{}
+.left_02 .myCoupon{}
+.left_02 .ltit{
+    width: 60%;
+}
+.left_02 .rtxt{
+    width: 40%;
+    text-align: right;
+}
+
+.left_03{
+    padding: 13px 20px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+
+
+
+
+
+/* Box_right */
+.myPoint_wrap .Box_right{
+    position: relative;
+    width: calc(100% - 270px);
+    padding-top: 52px;
+}   
+.pointNow{
+    display: flex;
+    padding: 20px 0;
+    box-sizing: border-box;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+} 
+.pointNow > div{
+    width: 50%;
+    text-align: center;
+} 
+.pointNow .usable{
+    border-right: 1px solid #e5e5e5;
+} 
+.pointNow .disapear{} 
+.pointNow > div .won{
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+.Box_right .descBox{
+    color: gray;
+    font-size: 0.9rem;
+    line-height: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============================================================================================================반응형===============================
+=========================================================================== */
+@media(max-width:1220px){}
+@media(max-width:1024px){}
+@media(max-width:960px){}
+@media(max-width:768px){
+    .myPoint_wrap{
+        margin-top: 115px;
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+    .myPoint_wrap .Box_left,
+    .myPoint_wrap .Box_right{
+        width: 100%;
+        padding-top: 0;
+    }
+    .myPoint_wrap .Box_left{margin-right: 0;}
+    .myPoint_wrap .inner{
+        flex-wrap: wrap;
+    }
+
+
+
+
+
+}
+@media(max-width:530px){}
+@media(max-width:425px){}

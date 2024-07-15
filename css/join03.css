@@ -1,0 +1,70 @@
+.join{}
+.join .tiny_inner{
+    /* border: 1px solid #efefef; */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.logo {
+    text-align: center;
+}
+.logo img{
+    width: 120px;
+}
+.joinTit{
+    text-align: center;
+}
+
+.emLogin{}
+.emLogin > div{
+    position: relative;
+}
+
+
+
+
+/* 작은 텍스트 */
+.txts{}
+.txts li{
+    line-height: 1.5;
+    color: #9a9a9a;
+}
+.txts .star{display: flex;}
+.txts .star:before{
+    color: #9a9a9a;
+}
+
+
+
+/*  */
+.w_766{width: 76.6%;}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============================================================================================================반응형===============================
+=========================================================================== */
+@media(max-width:1220px){}
+@media(max-width:1024px){}
+@media(max-width:960px){
+}
+@media(max-width:768px){}
+@media(max-width:425px){
+    .tiny_inner {
+        width: 100%;
+    }
+    .w_766 {
+        width: 72%;
+    }
+    .w_20 {
+        width: 17%;
+    }
+}
